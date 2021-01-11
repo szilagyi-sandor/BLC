@@ -1,0 +1,46 @@
+// Colors.
+$defaultColor: #202a42;
+$primaryColor: #3e8bff;
+
+$successColor: #28a745;
+$warningColor: #ffc107;
+$errorColor: #dc3545;
+
+// Backgrounds.
+$defaultBackground: #fff;
+
+// Breakpoints.
+$smMin: 576px;
+$smMax: $smMin - 1;
+$mdMin: 768px;
+$mdMax: $mdMin - 1;
+$lgMin: 992px;
+$lgMax: $lgMin - 1;
+$xlMin: 1200px;
+$xlMax: $xlMin - 1;
+
+$breakPointsArr: (
+  sm: $smMin,
+  md: $mdMin,
+  lg: $lgMin,
+  xl: $xlMin,
+);
+
+// @each $name, $glyph in $icons {
+//   .icon-#{$name}:before {
+//     display: inline-block;
+//     font-family: "Icon Font";
+//     content: $glyph;
+//   }
+// }
+
+// Distances.
+$gridPadding: 15px;
+$defaultDistance: 15px;
+
+// Widths.
+// $gridContainerSmWidth starts above $smMin.
+$gridContainerSmWidth: 540px;
+$gridContainerMdWidth: 720px;
+$gridContainerLgWidth: 960px;
+$gridContainerXlWidth: 1140px;

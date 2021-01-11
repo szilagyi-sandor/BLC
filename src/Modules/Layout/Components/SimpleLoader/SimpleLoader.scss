@@ -1,0 +1,32 @@
+@import "Assets/Scss/BLC/Config.scss";
+@import "Assets/Scss/Custom/Variables.scss";
+
+.simpleLoader {
+  opacity: 0.8;
+  height: 7px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border: 1px solid $defaultBackgroundVar1;
+
+  .indicator {
+    width: 40%;
+    animation: loading 2s linear infinite;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    background: $primaryColor;
+  }
+}
+
+@keyframes loading {
+  from {
+    left: -40%;
+  }
+  to {
+    left: 100%;
+  }
+}

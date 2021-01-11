@@ -1,0 +1,49 @@
+@import "Assets/Scss/BLC/Config.scss";
+@import "Assets/Scss/Custom/Variables.scss";
+
+.horizontalNavbar {
+  border-bottom: 1px solid $defaultBackgroundVar1;
+
+  .inner {
+    display: flex;
+
+    .navbarBrand {
+      margin: 0 30px 0 0;
+
+      a {
+        display: inline-block;
+        padding: 10px 0;
+        font-size: 30px;
+        text-decoration: none;
+        color: $primaryColor;
+      }
+    }
+
+    ul {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      margin-left: auto;
+
+      li {
+        display: block;
+
+        a {
+          display: inline-block;
+          font-size: 18px;
+          padding: 15px 20px;
+          color: $defaultColor;
+          text-decoration: none;
+          transition: color 320ms linear;
+
+          &.active,
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}

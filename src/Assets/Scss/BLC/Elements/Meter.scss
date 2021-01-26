@@ -1,0 +1,18 @@
+meter {
+  width: 140px;
+  height: 24px;
+  display: block;
+
+  &::-webkit-meter-bar {
+    background: none;
+    background-color: $defaultBackground;
+    box-shadow: 0 5px 5px -5px rba(0, 0, 0, 0.5) inset;
+    border: 1px solid $defaultColor;
+  }
+
+  &::-webkit-meter-optimum-value {
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background-color: $defaultColor;
+    background-size: 100% 100%;
+  }
+}

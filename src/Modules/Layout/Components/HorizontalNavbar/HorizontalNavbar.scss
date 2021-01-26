@@ -1,5 +1,4 @@
 @import "Assets/Scss/BLC/Config.scss";
-@import "Assets/Scss/Custom/Variables.scss";
 
 .horizontalNavbar {
   border-bottom: 1px solid $defaultBackgroundVar1;
@@ -13,9 +12,9 @@
       a {
         display: inline-block;
         padding: 10px 0;
-        font-size: 30px;
+        font-size: inherit;
+        font-weight: inherit;
         text-decoration: none;
-        color: $primaryColor;
       }
     }
 

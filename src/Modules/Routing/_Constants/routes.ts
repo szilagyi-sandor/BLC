@@ -15,6 +15,12 @@ export const unprocessedRoutes = createRoutes({
         paths: ["/"],
       },
 
+      defaultElements: {
+        Component: lazyPages.DefaultElements,
+        documentTitle: "Default elements",
+        paths: ["/default-elements"],
+      },
+
       notFound: {
         Component: lazyPages.Home,
         documentTitle: "Not found",

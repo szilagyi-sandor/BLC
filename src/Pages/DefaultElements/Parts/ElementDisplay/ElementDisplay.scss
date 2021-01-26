@@ -1,0 +1,12 @@
+@import "Assets/Scss/BLC/Config.scss";
+
+.elementDisplay {
+  margin-bottom: $largeDistance;
+  padding-bottom: 15px;
+  border-bottom: 1px solid $defaultBackgroundVar1;
+
+  > code {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+  }
+}

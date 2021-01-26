@@ -1,0 +1,60 @@
+// There are 3 type of width: specified (1-12), equal, auto.
+.col {
+  position: relative;
+  width: 100%;
+  padding-right: $gridPadding;
+  padding-left: $gridPadding;
+
+  // Taking care of default cases. They are not part
+  // of the breakpoints array.
+  @for $i from 1 through 12 {
+    &.dfCol#{$i} {
+      flex: 0 0 100%/12 * $i;
+      max-width: 100%/12 * $i;
+    }
+
+    &.dfOffset#{$i} {
+      margin-left: 100%/12 * $i;
+    }
+  }
+
+  &.dfColEqual {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  &.dfColAuto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%;
+  }
+
+  // Taking care of the cases included in the breakpoints array.
+  @each $name, $value in $breakPointsArr {
+    @media (min-width: $value) {
+      @for $i from 1 through 12 {
+        &.#{$name}Col#{$i} {
+          flex: 0 0 100%/12 * $i;
+          max-width: 100%/12 * $i;
+        }
+
+        &.#{$name}Offset#{$i} {
+          margin-left: 100%/12 * $i;
+        }
+      }
+
+      &.#{$name}ColEqual {
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+      }
+
+      &.#{$name}ColAuto {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,7 +1,8 @@
+// BLC Customization.
+// Customizations that are needed inside BLC modifications.
+@import "./Assets/Scss/Custom/Fonts.scss";
+
 // BLC.
 @import "./Assets/Scss/BLC/BLC.scss";
 
-// Custom.
-@import "./Assets/Scss/Custom/Variables.scss";
-@import "./Assets/Scss/Custom/Fonts.scss";
-@import "./Assets/Scss/Custom/Defaults.scss";
+// Additional customizations can be added under this.

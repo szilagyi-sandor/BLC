@@ -1,0 +1,8 @@
+abbr {
+  &[title] {
+    // Default has dotted underline, but it looks weird.
+    text-decoration: underline;
+    cursor: help;
+    border-bottom: 0;
+  }
+}

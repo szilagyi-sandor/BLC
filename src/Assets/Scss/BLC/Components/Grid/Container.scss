@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  padding-right: $gridPadding;
+  padding-left: $gridPadding;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $smMin) {
+    max-width: $gridContainerSmWidth;
+  }
+
+  @media (min-width: $mdMin) {
+    max-width: $gridContainerMdWidth;
+  }
+
+  @media (min-width: $lgMin) {
+    max-width: $gridContainerLgWidth;
+  }
+
+  @media (min-width: $xlMin) {
+    max-width: $gridContainerXlWidth;
+  }
+
+  &.fullWidth {
+    max-width: 100%;
+  }
+}

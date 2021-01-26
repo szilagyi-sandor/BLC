@@ -2,21 +2,21 @@ import React from "react";
 
 import "./ErrorPage.scss";
 
-import GridContainer from "Modules/Layout/BLC/Grid/Container/GridContainer";
+import Container from "Modules/Layout/BLC/Components/Grid/Container/Container";
 
 export default function ErrorPage() {
   return (
     <section className="errorPage">
       <header>
-        <GridContainer>
+        <Container>
           <h2>Error page</h2>
-        </GridContainer>
+        </Container>
       </header>
 
       <div className="content">
-        <GridContainer>
+        <Container>
           <p>Something went wrong.</p>
-        </GridContainer>
+        </Container>
       </div>
     </section>
   );

@@ -2,6 +2,97 @@
 @import "./Defaults.scss";
 @import "./Utils.scss";
 
-@import "./Components/Grid/GridContainer.scss";
-@import "./Components/Grid/GridRow.scss";
-@import "./Components/Grid/GridCol.scss";
+// Elements.
+// If an element has a clone class it means it has a class that makes other elements look the same.
+// For clone classes always specify display and cursor attributes, if they differ from the one
+// given in Utils > reset mixin.
+
+// TODO: Add custom classes
+// Components are used for extra functionalites
+@import "./Elements/Main.scss";
+@import "./Elements/Section.scss";
+@import "./Elements/Aside.scss";
+@import "./Elements/Article.scss";
+@import "./Elements/Header.scss";
+@import "./Elements/Footer.scss";
+
+// Has clone class.
+@import "./Elements/Headings.scss";
+// Has clone class.
+@import "./Elements/Paragraph.scss";
+
+// Has clone classes
+@import "./Elements/Hyperlink.scss";
+// Has clone class.
+@import "./Elements/Button.scss";
+
+@import "./Elements/Image.scss";
+@import "./Elements/Figure.scss";
+@import "./Elements/Map.scss";
+@import "./Elements/Picture.scss";
+@import "./Elements/Svg.scss";
+@import "./Elements/Video.scss";
+@import "./Elements/Audio.scss";
+@import "./Elements/Iframe.scss";
+@import "./Elements/Embed.scss";
+@import "./Elements/Object.scss";
+
+@import "./Elements/Navigation.scss";
+@import "./Elements/Form.scss";
+@import "./Elements/Label.scss";
+@import "./Elements/HorizontalLine.scss";
+@import "./Elements/Details.scss";
+@import "./Elements/Dialog.scss";
+@import "./Elements/Table.scss";
+@import "./Elements/Canvas.scss";
+@import "./Elements/Template.scss";
+
+@import "./Elements/Progress.scss";
+@import "./Elements/Meter.scss";
+
+@import "./Elements/Lists.scss";
+
+@import "./Elements/Div.scss";
+@import "./Elements/Span.scss";
+
+@import "./Elements/Address.scss";
+@import "./Elements/Definition.scss";
+@import "./Elements/Abbreviation.scss";
+@import "./Elements/Subscript.scss";
+@import "./Elements/Superscript.scss";
+@import "./Elements/Small.scss";
+@import "./Elements/Citation.scss";
+@import "./Elements/Unarticulated.scss";
+
+@import "./Elements/Time.scss";
+@import "./Elements/Data.scss";
+
+@import "./Elements/Strong.scss";
+@import "./Elements/Mark.scss";
+@import "./Elements/Emphasized.scss";
+@import "./Elements/Bold.scss";
+@import "./Elements/Idiomatic.scss";
+
+@import "./Elements/Quote.scss";
+@import "./Elements/Blockquote.scss";
+
+@import "./Elements/Deleted.scss";
+@import "./Elements/StrikeThrough.scss";
+@import "./Elements/Inserted.scss";
+
+@import "./Elements/Preformatted.scss";
+@import "./Elements/Code.scss";
+@import "./Elements/KeyboardInput.scss";
+@import "./Elements/Variable.scss";
+@import "./Elements/Output.scss";
+@import "./Elements/Sample.scss";
+
+@import "./Elements/BiDirectionalIsolation.scss";
+@import "./Elements/BiDirectionalOverride.scss";
+
+// Additional, non-styled tags:  <br />, <wbr />
+
+// Components.
+@import "./Components/Grid/Container.scss";
+@import "./Components/Grid/Row.scss";
+@import "./Components/Grid/Col.scss";

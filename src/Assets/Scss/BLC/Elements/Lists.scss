@@ -1,0 +1,16 @@
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: $defaultDistance;
+}
+
+dl {
+  dt {
+    font-weight: 700;
+  }
+
+  dd {
+    margin-bottom: $smallDistance;
+  }
+}

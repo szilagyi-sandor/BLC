@@ -6,7 +6,7 @@ import RouteMapper from "Modules/Routing/ReactAutoRouting/RouteMapper/RouteMappe
 import { LayoutProps } from "Modules/Routing/ReactAutoRouting/_Interfaces/PropHelpers/LayoutProps";
 import HorizontalNavbar from "Modules/Layout/Components/HorizontalNavbar/HorizontalNavbar";
 import { siteNavItems } from "./_Constants/siteNavItems";
-import GridContainer from "Modules/Layout/BLC/Grid/Container/GridContainer";
+import Container from "Modules/Layout/BLC/Components/Grid/Container/Container";
 
 export default function SiteLayout({ routeMapperProps }: LayoutProps) {
   return (
@@ -20,9 +20,9 @@ export default function SiteLayout({ routeMapperProps }: LayoutProps) {
       </main>
 
       <footer>
-        <GridContainer>
+        <Container>
           <p>2021 BLC</p>
-        </GridContainer>
+        </Container>
       </footer>
     </section>
   );

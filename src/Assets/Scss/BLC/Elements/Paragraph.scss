@@ -1,0 +1,8 @@
+.p {
+  @include reset;
+}
+
+p,
+.p {
+  margin: 0 0 $defaultDistance 0;
+}

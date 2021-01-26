@@ -1,0 +1,25 @@
+.a {
+  @include reset;
+  margin: 0;
+}
+
+a,
+.a {
+  display: inline;
+  color: $primaryColor;
+  text-decoration: underline;
+  font-weight: 400;
+  outline: none;
+  cursor: pointer;
+  line-height: $defaultLineHeight;
+  transition-property: color;
+  transition-duration: 320ms;
+  transition-timing-function: linear;
+
+  // The hover is doubled here to override the reset mixin :hover:not(:disabled).
+  &:hover:hover {
+    text-decoration: underline;
+    color: $defaultColor;
+    text-decoration: underline;
+  }
+}

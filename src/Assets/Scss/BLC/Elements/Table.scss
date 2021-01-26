@@ -1,0 +1,42 @@
+table {
+  width: 100%;
+  margin-bottom: $defaultDistance;
+  color: $defaultColor;
+  border-collapse: collapse;
+
+  caption {
+    padding-top: 0;
+    padding-bottom: $defaultDistance;
+    color: $defaultColor;
+    text-align: left;
+    caption-side: top;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  thead {
+    tr {
+      th {
+        vertical-align: bottom;
+        padding: $gridPadding;
+        border: 1px solid $defaultColor;
+        text-align: inherit;
+      }
+    }
+  }
+
+  tbody,
+  tfoot {
+    tr {
+      td {
+        padding: $gridPadding;
+        vertical-align: top;
+        border: 1px solid $defaultColor;
+      }
+    }
+  }
+}
+
+.tableWrapper {
+  overflow: auto;
+}

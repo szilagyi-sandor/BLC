@@ -4,13 +4,13 @@ import "./HorizontalNavbar.scss";
 
 import { NavLink } from "react-router-dom";
 import { HorizontalNavbarProps } from "./interfaces";
-import GridContainer from "Modules/Layout/BLC/Grid/Container/GridContainer";
+import Container from "Modules/Layout/BLC/Components/Grid/Container/Container";
 
 // TODO: responsivity
 export default function HorizontalNavbar({ items }: HorizontalNavbarProps) {
   return (
     <nav className="horizontalNavbar">
-      <GridContainer>
+      <Container>
         <div className="inner">
           <h1 className="navbarBrand">
             <NavLink to="/" exact>
@@ -28,7 +28,7 @@ export default function HorizontalNavbar({ items }: HorizontalNavbarProps) {
             ))}
           </ul>
         </div>
-      </GridContainer>
+      </Container>
     </nav>
   );
 }

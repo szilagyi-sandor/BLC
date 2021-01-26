@@ -2,19 +2,19 @@ import React from "react";
 
 import "./HomePage.scss";
 
-import GridContainer from "Modules/Layout/BLC/Grid/Container/GridContainer";
+import Container from "Modules/Layout/BLC/Components/Grid/Container/Container";
 
 export default function HomePage() {
   return (
     <section className="homePage">
       <header>
-        <GridContainer>
+        <Container>
           <h2>Home page</h2>
-        </GridContainer>
+        </Container>
       </header>
 
       <div className="content">
-        <GridContainer>
+        <Container>
           <p>
             Mauris eget cursus felis, a facilisis ante. Vivamus ac orci eget
             ligula interdum sodales nec ac quam. Integer cursus mattis
@@ -38,7 +38,7 @@ export default function HomePage() {
             massa lacinia aliquet vestibulum ac mauris. Nullam efficitur euismod
             tempus.
           </p>
-        </GridContainer>
+        </Container>
       </div>
     </section>
   );

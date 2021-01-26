@@ -2,12 +2,14 @@
 $defaultColor: #202a42;
 $primaryColor: #3e8bff;
 
-$successColor: #28a745;
-$warningColor: #ffc107;
+$successColor: #0c8027;
+$warningColor: #d49f00;
 $errorColor: #dc3545;
 
 // Backgrounds.
 $defaultBackground: #fff;
+// Example for custom classes from outside
+$defaultBackgroundVar1: #dcdcdc;
 
 // Breakpoints.
 $smMin: 576px;
@@ -26,20 +28,22 @@ $breakPointsArr: (
   xl: $xlMin,
 );
 
-// @each $name, $glyph in $icons {
-//   .icon-#{$name}:before {
-//     display: inline-block;
-//     font-family: "Icon Font";
-//     content: $glyph;
-//   }
-// }
-
 // Distances.
 $gridPadding: 15px;
-$defaultDistance: 15px;
+$smallDistance: 10px;
+$mediumDistance: 20px;
+$largeDistance: 30px;
+$defaultDistance: $mediumDistance;
+
+// Fonts.
+$defaultFontSize: 16px;
+$defaultFontFamily: Verdana, sans-serif;
+
+// Line heights.
+$defaultLineHeight: 1.4;
 
 // Widths.
-// $gridContainerSmWidth starts above $smMin.
+// The $gridContainerSmWidth starts above $smMin.
 $gridContainerSmWidth: 540px;
 $gridContainerMdWidth: 720px;
 $gridContainerLgWidth: 960px;

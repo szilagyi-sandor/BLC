@@ -1,4 +1,4 @@
-.srOnly {
+@mixin createSrOnly {
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -8,4 +8,41 @@
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+// TODO: test this a bit more
+// Reset might need some expansion based on stylings of elements.
+@mixin reset {
+  display: block;
+  font-family: $defaultFontFamily;
+  font-size: $defaultFontSize;
+  font-weight: 400;
+  margin: 0 0 $defaultDistance 0;
+  padding: 0;
+  background: none;
+  color: $defaultColor;
+  border: 0;
+  border-radius: 0;
+  line-height: $defaultLineHeight;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  outline: none;
+  overflow: visible;
+  cursor: text;
+
+  &:hover,
+  &:focus,
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    border: 0;
+    color: $defaultColor;
+    background: none;
+    text-decoration: none;
+    transform: none;
+  }
+}
+
+.srOnly {
+  @include createSrOnly;
 }

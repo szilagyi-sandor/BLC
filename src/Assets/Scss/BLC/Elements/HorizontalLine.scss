@@ -1,0 +1,9 @@
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin-top: $defaultDistance;
+  margin-bottom: $defaultDistance;
+  border: 0;
+  border-top: 1px solid $defaultColor;
+}

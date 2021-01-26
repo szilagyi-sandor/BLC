@@ -1,24 +1,25 @@
-import GridContainer from "Modules/Layout/BLC/Grid/Container/GridContainer";
 import React from "react";
 
 import "./NotFoundPage.scss";
+
+import Container from "Modules/Layout/BLC/Components/Grid/Container/Container";
 
 export default function NotFoundPage() {
   return (
     <section className="notFoundPage">
       <header>
-        <GridContainer>
+        <Container>
           <h2>Not found page</h2>
-        </GridContainer>
+        </Container>
       </header>
 
       <div className="content">
-        <GridContainer>
+        <Container>
           <p>
             The link is incorrect or the page has been removed. Make sure the
             link you are trying to open is correct.
           </p>
-        </GridContainer>
+        </Container>
       </div>
     </section>
   );

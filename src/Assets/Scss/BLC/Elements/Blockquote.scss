@@ -1,0 +1,12 @@
+blockquote {
+  margin: 0 0 $defaultDistance 0;
+
+  > footer {
+    display: block;
+    font-size: 15px;
+
+    &:before {
+      content: "— ";
+    }
+  }
+}
